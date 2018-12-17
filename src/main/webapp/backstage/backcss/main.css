@@ -1,0 +1,18 @@
+/*CSS重置*/
+body {
+    font-family: "Adobe Hebrew";
+    margin: 0px;
+    padding: 0px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+/*内容*/
+/*导航栏*/
+
