@@ -10,7 +10,7 @@ public class Jdbc {
     private static final String PASSWORD;
 
     static {
-        DRIVERCLASS = ResourceBundle.getBundle("jdbc").getString("driver");
+        DRIVERCLASS = ResourceBundle.getBundle("jdbc").getString("driverClass");
         URL = ResourceBundle.getBundle("jdbc").getString("url");
         USERNAME = ResourceBundle.getBundle("jdbc").getString("username");
         PASSWORD = ResourceBundle.getBundle("jdbc").getString("password");

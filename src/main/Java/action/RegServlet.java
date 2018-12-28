@@ -28,7 +28,12 @@ public class RegServlet extends HttpServlet {
             e.printStackTrace();
         }
         if (flag){
-            request.getRequestDispatcher("/backstage/backmain.jsp").forward(request,response);
+            request.setAttribute("loginname",uname);
+            request.getRequestDispatcher("/backstage/jsp/regok.jsp").forward(request,response);
+        }
+        else {
+            request.setAttribute("loginname",uname);
+            request.getRequestDispatcher("/backstage/jsp/reerror.jsp").forward(request,response);
         }
     }
 
